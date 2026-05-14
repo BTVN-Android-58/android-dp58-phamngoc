@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_bg"
+    tools:context=".MainActivity">
+
+    <!-- Top bar: Search bar + notification + profile -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <!-- Search bar -->
+        <LinearLayout
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:padding="4dp"
+                android:src="@drawable/chip_selected_bg"
+                app:tint="@color/light_text"
+                android:scaleType="centerInside" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pinterest"
+                android:textSize="30sp"
+                android:textColor="@color/pinterest_red"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Notification bell -->
+        <ImageView
+            android:id="@+id/btn_add"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_add"
+            app:tint="@color/light_text"
+            android:scaleType="centerInside" />
+
+        <!-- Notification bell -->
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_search"
+            app:tint="@color/light_text"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+    <!-- Tab chips: For You, Following, etc -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:id="@+id/tab_for_you"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="For You"
+                android:textSize="12sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center"
+                android:textColor="@color/chip_text_selected"
+                android:background="@drawable/chip_selected_bg"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/tab_popular"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Popular"
+                android:textSize="12sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center"
+                android:textColor="@color/chip_text_unselected"
+                android:background="@drawable/chip_unselected_bg"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/tab_design"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Design"
+                android:textSize="12sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center"
+                android:textColor="@color/chip_text_unselected"
+                android:background="@drawable/chip_unselected_bg"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/tab_tech"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Technology"
+                android:textSize="12sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center"
+                android:textColor="@color/chip_text_unselected"
+                android:background="@drawable/chip_unselected_bg"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/tab_art"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Art"
+                android:textSize="12sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center"
+                android:textColor="@color/chip_text_unselected"
+                android:background="@drawable/chip_unselected_bg"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/tab_food"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Food and Drink"
+                android:textSize="12sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center"
+                android:textColor="@color/chip_text_unselected"
+                android:background="@drawable/chip_unselected_bg" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- Thin divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <!-- Fragment container -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_bg" />
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="8dp"
+        app:itemIconTint="@color/bottom_nav_color_selector"
+        app:itemTextColor="@color/bottom_nav_color_selector"
+        app:labelVisibilityMode="labeled"
+        app:itemIconSize="24dp"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>
