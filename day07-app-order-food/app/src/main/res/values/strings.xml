@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Food Order</string>
+    <string name="all_recipes">All recipes</string>
+    <string name="search_hint">Search here</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="snack">Snack</string>
+    <string name="back">Back</string>
+    <string name="favorite">Favorite</string>
+    <string name="not_favorite">Not favorite</string>
+    <string name="recipe_rating">%1$.1f</string>
+    <string name="recipe_time">%1$d mins</string>
+    <string name="detail_description">%1$s</string>
+    <string name="ingredients_title">Ingredients (%1$d)</string>
+    <string name="rate_recipe">Rate Recipe</string>
+    <string name="label_cooking_time">Cooking time</string>
+    <string name="label_difficulty">Difficulty</string>
+    <string name="label_servings">Servings</string>
+    <string name="people_count">%1$d people</string>
+    <string name="search_content_desc">Search</string>
+    <string name="recipe_thumbnail">Recipe thumbnail</string>
+</resources>

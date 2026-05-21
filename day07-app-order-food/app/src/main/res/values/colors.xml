@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="screen_background">#F3F2F7</color>
+    <color name="surface_card">#FFFDFB</color>
+    <color name="surface_muted">#FFF5EA</color>
+    <color name="text_primary">#222222</color>
+    <color name="text_secondary">#777777</color>
+    <color name="text_tertiary">#B8B8B8</color>
+    <color name="chip_selected_bg">#1F2428</color>
+    <color name="chip_selected_text">#FFFFFF</color>
+    <color name="chip_default_border">#E5E2DB</color>
+    <color name="accent_yellow">#F3C24F</color>
+    <color name="accent_red">#F55C54</color>
+    <color name="accent_green">#D7F1A7</color>
+    <color name="accent_beige">#F3E6CF</color>
+    <color name="detail_hero">#C9B99E</color>
+    <color name="divider_soft">#ECE8E0</color>
+    <color name="tag_bg_one">#EEF7BA</color>
+    <color name="tag_bg_two">#F9E8C6</color>
+    <color name="tag_bg_three">#DFF8FB</color>
+</resources>
