@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Take Note Room</string>
+    <string name="my_notes">My notes</string>
+    <string name="get_pro">Get Pro</string>
+    <string name="search_placeholder">Search notes, content, tag...</string>
+    <string name="clear_filter">Clear filter</string>
+    <string name="add_note">Add Note</string>
+    <string name="pinned">PINNED</string>
+    <string name="more_actions">More actions</string>
+    <string name="note_title">Note title</string>
+    <string name="tag">Tag</string>
+    <string name="note_content">Note content</string>
+    <string name="mark_as_pinned">Mark as pinned</string>
+    <string name="no_notes_found">No notes found. Tap Add Note to create one.</string>
+    <string name="all_tags">All tags</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_note">Create note</string>
+    <string name="edit_note">Edit note</string>
+    <string name="delete_note">Delete note</string>
+    <string name="delete_note_message">Delete this note permanently?</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="title_required">Title cannot be empty</string>
+    <string name="note_saved">Note saved</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="filters_reset">Filters reset</string>
+    <string name="more_vertical">⋮</string>
+</resources>
